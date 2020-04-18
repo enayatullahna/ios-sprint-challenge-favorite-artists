@@ -176,7 +176,11 @@
                         <viewLayoutGuide key="safeArea" id="Hv7-r9-zVk"/>
                     </view>
                     <navigationItem key="navigationItem" id="dSt-zy-PZM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3I2-3a-Rwk"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3I2-3a-Rwk">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="cQ5-Wc-vUD" id="Pl2-G9-EwL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="artistNameLabel" destination="0YL-dm-NQ3" id="wND-Ob-6Ri"/>

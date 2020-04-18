@@ -70,7 +70,16 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    
+    if ([segue.identifier isEqualToString:@"AddArtist"]) {
+        LSIAddArtistViewController *destinationVC = segue.destinationViewController;
+        destinationVC.artistController = self.artistController;
+    } else if ([segue.identifier isEqualToString:@"ShowArtistDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        LSIArtistDetailsViewController *destinationVC = segue.destinationViewController;
+        self.artist = [self.artistArray objectAtIndex:indexPath.row];
+        destinationVC.artist = self.artist;
+    }
     
 }
 

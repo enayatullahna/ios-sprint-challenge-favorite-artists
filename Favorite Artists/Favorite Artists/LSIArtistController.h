@@ -11,8 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//MARK:- typedef
-typedef void (^LSIArtistSearchCompleted)(LSIArtist * _Nullable, NSError * _Nullable);
+typedef void (^LSIArtistSearchCompleted)(LSIArtist *artist, NSError *error);
 
 @interface LSIArtistController : NSObject
 
