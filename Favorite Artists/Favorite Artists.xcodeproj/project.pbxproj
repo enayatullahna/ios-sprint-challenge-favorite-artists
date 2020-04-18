@@ -17,6 +17,7 @@
 		E601EB90244B6617006EF6CC /* LSIArtistDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB8F244B6617006EF6CC /* LSIArtistDetailsViewController.m */; };
 		E601EB93244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB92244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.m */; };
 		E601EB97244B67B2006EF6CC /* LSIArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB96244B67B2006EF6CC /* LSIArtist.m */; };
+		E601EBA0244B6A5D006EF6CC /* NSArtist+LSINSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB9F244B6A5D006EF6CC /* NSArtist+LSINSJSONSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		E601EB92244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFavoriteArtistsTableViewController.m; sourceTree = "<group>"; };
 		E601EB95244B67B2006EF6CC /* LSIArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtist.h; sourceTree = "<group>"; };
 		E601EB96244B67B2006EF6CC /* LSIArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtist.m; sourceTree = "<group>"; };
+		E601EB9E244B6A5D006EF6CC /* NSArtist+LSINSJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArtist+LSINSJSONSerialization.h"; sourceTree = "<group>"; };
+		E601EB9F244B6A5D006EF6CC /* NSArtist+LSINSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArtist+LSINSJSONSerialization.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +73,12 @@
 		E601EB61244B5D5F006EF6CC /* Favorite Artists */ = {
 			isa = PBXGroup;
 			children = (
-				E601EB94244B6782006EF6CC /* Model */,
-				E601EB74244B5D60006EF6CC /* main.m */,
-				E601EB80244B63EB006EF6CC /* ViewControllers */,
+				E601EB9C244B6985006EF6CC /* Model */,
+				E601EB9D244B6998006EF6CC /* ViewControllers */,
 				E601EB7B244B5DAC006EF6CC /* Resources */,
+				E601EB74244B5D60006EF6CC /* main.m */,
+				E601EB9E244B6A5D006EF6CC /* NSArtist+LSINSJSONSerialization.h */,
+				E601EB9F244B6A5D006EF6CC /* NSArtist+LSINSJSONSerialization.m */,
 			);
 			path = "Favorite Artists";
 			sourceTree = "<group>";
@@ -93,7 +98,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		E601EB80244B63EB006EF6CC /* ViewControllers */ = {
+		E601EB9C244B6985006EF6CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E601EB95244B67B2006EF6CC /* LSIArtist.h */,
+				E601EB96244B67B2006EF6CC /* LSIArtist.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E601EB9D244B6998006EF6CC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				E601EB91244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.h */,
@@ -104,15 +118,6 @@
 				E601EB8F244B6617006EF6CC /* LSIArtistDetailsViewController.m */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		E601EB94244B6782006EF6CC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E601EB95244B67B2006EF6CC /* LSIArtist.h */,
-				E601EB96244B67B2006EF6CC /* LSIArtist.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +193,7 @@
 			files = (
 				E601EB64244B5D5F006EF6CC /* AppDelegate.m in Sources */,
 				E601EB93244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.m in Sources */,
+				E601EBA0244B6A5D006EF6CC /* NSArtist+LSINSJSONSerialization.m in Sources */,
 				E601EB90244B6617006EF6CC /* LSIArtistDetailsViewController.m in Sources */,
 				E601EB8D244B65E2006EF6CC /* LSIAddArtistViewController.m in Sources */,
 				E601EB75244B5D60006EF6CC /* main.m in Sources */,
