@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIArtist : NSObject
 
+//MARK:- Properties
 @property NSString *name;
 @property NSString *biography;
 @property int yearFormed;
