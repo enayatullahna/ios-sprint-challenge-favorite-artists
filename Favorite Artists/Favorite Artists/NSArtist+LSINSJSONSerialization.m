@@ -30,13 +30,13 @@
 {
     NSMutableDictionary *artistDictionary = [NSMutableDictionary dictionary];
     [artistDictionary setObject:self.name forKey:@"stringArtist"];
-    [artistDictionary setObject:self.biography forKey:@"stringBiographyEN"];
+    [artistDictionary setObject:self.biography forKey:@"stringBiography"];
     
 
     NSString *yearFormedString = @(self.yearFormed).stringValue;
     [artistDictionary setObject:yearFormedString forKey:@"intFormedYear"];
 
-    NSDictionary *finalArtistDictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.name, @"stringArtist", self.biography, @"stringBiographyEN", yearFormedString, @"intFormedYear", nil];
+    NSDictionary *finalArtistDictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.name, @"stringArtist", self.biography, @"stringBiography", yearFormedString, @"intFormedYear", nil];
 
     return finalArtistDictionary;
 }
