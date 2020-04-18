@@ -16,6 +16,7 @@
 		E601EB8D244B65E2006EF6CC /* LSIAddArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB8C244B65E2006EF6CC /* LSIAddArtistViewController.m */; };
 		E601EB90244B6617006EF6CC /* LSIArtistDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB8F244B6617006EF6CC /* LSIArtistDetailsViewController.m */; };
 		E601EB93244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB92244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.m */; };
+		E601EB97244B67B2006EF6CC /* LSIArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E601EB96244B67B2006EF6CC /* LSIArtist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		E601EB8F244B6617006EF6CC /* LSIArtistDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtistDetailsViewController.m; sourceTree = "<group>"; };
 		E601EB91244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFavoriteArtistsTableViewController.h; sourceTree = "<group>"; };
 		E601EB92244B6640006EF6CC /* LSIFavoriteArtistsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFavoriteArtistsTableViewController.m; sourceTree = "<group>"; };
+		E601EB95244B67B2006EF6CC /* LSIArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtist.h; sourceTree = "<group>"; };
+		E601EB96244B67B2006EF6CC /* LSIArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		E601EB61244B5D5F006EF6CC /* Favorite Artists */ = {
 			isa = PBXGroup;
 			children = (
+				E601EB94244B6782006EF6CC /* Model */,
 				E601EB74244B5D60006EF6CC /* main.m */,
 				E601EB80244B63EB006EF6CC /* ViewControllers */,
 				E601EB7B244B5DAC006EF6CC /* Resources */,
@@ -100,6 +104,15 @@
 				E601EB8F244B6617006EF6CC /* LSIArtistDetailsViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E601EB94244B6782006EF6CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E601EB95244B67B2006EF6CC /* LSIArtist.h */,
+				E601EB96244B67B2006EF6CC /* LSIArtist.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +192,7 @@
 				E601EB8D244B65E2006EF6CC /* LSIAddArtistViewController.m in Sources */,
 				E601EB75244B5D60006EF6CC /* main.m in Sources */,
 				E601EB67244B5D5F006EF6CC /* SceneDelegate.m in Sources */,
+				E601EB97244B67B2006EF6CC /* LSIArtist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
