@@ -24,6 +24,23 @@
 //MARK:- Implementation
 @implementation LSIFavoriteArtistsTableViewController
 
+//MARK:- View Will Appear
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (!self.artistController) {
+        self.artistController = [[LSIArtistController alloc] init];
+        self.artist = [[LSIArtist alloc] init];
+    }
+    
+    [self.artistArray removeAllObjects];
+    self.artistArray = [self.artistController fetchAllSavedArtists];
+    
+    NSLog(@"%lu", (unsigned long)self.artistArray.count);
+    
+    [self.tableView reloadData];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,12 +66,12 @@
 
 
 
-#pragma mark - Navigation
+#pragma mark - Navigation Segue
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    
 }
 
 

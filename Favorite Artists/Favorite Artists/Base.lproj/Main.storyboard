@@ -40,7 +40,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Xpk-AE-kJz" kind="show" id="mcE-lB-8jd"/>
+                                    <segue destination="Xpk-AE-kJz" kind="show" identifier="ShowArtistDetail" id="mcE-lB-8jd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Favorite Artists" id="zkx-3Y-3Dn">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KZK-V5-lm8">
                             <connections>
-                                <segue destination="cQ5-Wc-vUD" kind="show" id="ClW-P2-sPY"/>
+                                <segue destination="cQ5-Wc-vUD" kind="show" identifier="AddArtist" id="ClW-P2-sPY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -110,6 +110,11 @@
                         <viewLayoutGuide key="safeArea" id="PqP-SE-yPJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="qFW-oN-lLF"/>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="Cxl-NC-Eyh" id="iVZ-Z9-Vp9"/>
+                        <outlet property="biographyTextView" destination="sHe-iY-pHu" id="z97-yg-hvk"/>
+                        <outlet property="yearFormedLabel" destination="ruJ-4m-Edi" id="8qc-EK-UPr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydB-R9-WzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,6 +178,12 @@
                     <navigationItem key="navigationItem" id="dSt-zy-PZM">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3I2-3a-Rwk"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="0YL-dm-NQ3" id="wND-Ob-6Ri"/>
+                        <outlet property="biographyTextView" destination="faH-Eu-fbj" id="qff-CW-PBv"/>
+                        <outlet property="searchBar" destination="h0R-4h-efE" id="1A6-OQ-6EY"/>
+                        <outlet property="yearFormedLabel" destination="7L6-ab-6EK" id="KN3-fq-11A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebF-Ln-Z63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

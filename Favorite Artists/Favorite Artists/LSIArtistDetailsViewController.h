@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSIArtistController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIArtistDetailsViewController : UIViewController
+
+//MARK:- Outlets
+@property (weak, nonatomic) IBOutlet UILabel *artistNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yearFormedLabel;
+@property (weak, nonatomic) IBOutlet UITextView *biographyTextView;
+
+//MARK:- Properties
+@property LSIArtist *artist;
 
 @end
 
