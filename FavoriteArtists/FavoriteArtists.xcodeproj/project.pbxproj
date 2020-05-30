@@ -13,6 +13,7 @@
 		E663B49B2482B51E00EA9960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E663B49A2482B51E00EA9960 /* Assets.xcassets */; };
 		E663B49E2482B51E00EA9960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E663B49C2482B51E00EA9960 /* LaunchScreen.storyboard */; };
 		E663B4A12482B51E00EA9960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4A02482B51E00EA9960 /* main.m */; };
+		E663B4AF2482B8FE00EA9960 /* LSIArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4AE2482B8FE00EA9960 /* LSIArtist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E663B49D2482B51E00EA9960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E663B49F2482B51E00EA9960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E663B4A02482B51E00EA9960 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E663B4AD2482B8FE00EA9960 /* LSIArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtist.h; sourceTree = "<group>"; };
+		E663B4AE2482B8FE00EA9960 /* LSIArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		E663B48D2482B51D00EA9960 /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
+				E663B4AD2482B8FE00EA9960 /* LSIArtist.h */,
+				E663B4AE2482B8FE00EA9960 /* LSIArtist.m */,
 				E663B4A92482B85000EA9960 /* Storyboard */,
 				E663B4A72482B78D00EA9960 /* Resources */,
 				E663B4A02482B51E00EA9960 /* main.m */,
@@ -113,6 +118,7 @@
 		E663B4832482B51D00EA9960 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSI;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Enayatullah Naseri";
 				TargetAttributes = {
@@ -158,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E663B4902482B51D00EA9960 /* AppDelegate.m in Sources */,
+				E663B4AF2482B8FE00EA9960 /* LSIArtist.m in Sources */,
 				E663B4A12482B51E00EA9960 /* main.m in Sources */,
 				E663B4932482B51D00EA9960 /* SceneDelegate.m in Sources */,
 			);
