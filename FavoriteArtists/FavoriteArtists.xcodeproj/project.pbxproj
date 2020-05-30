@@ -14,6 +14,11 @@
 		E663B49E2482B51E00EA9960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E663B49C2482B51E00EA9960 /* LaunchScreen.storyboard */; };
 		E663B4A12482B51E00EA9960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4A02482B51E00EA9960 /* main.m */; };
 		E663B4AF2482B8FE00EA9960 /* LSIArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4AE2482B8FE00EA9960 /* LSIArtist.m */; };
+		E663B4B52482B9FD00EA9960 /* LSIArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4B42482B9FD00EA9960 /* LSIArtistController.m */; };
+		E663B4B82482BA7E00EA9960 /* NSArtist+LSINSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4B72482BA7E00EA9960 /* NSArtist+LSINSJSONSerialization.m */; };
+		E663B4BB2482BBC700EA9960 /* LSIFavoriteArtistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4BA2482BBC700EA9960 /* LSIFavoriteArtistsTableViewController.m */; };
+		E663B4BE2482BC3B00EA9960 /* LSIAddArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4BD2482BC3B00EA9960 /* LSIAddArtistViewController.m */; };
+		E663B4C12482BD7300EA9960 /* LSIArtistDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E663B4C02482BD7300EA9960 /* LSIArtistDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,16 @@
 		E663B4A02482B51E00EA9960 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E663B4AD2482B8FE00EA9960 /* LSIArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtist.h; sourceTree = "<group>"; };
 		E663B4AE2482B8FE00EA9960 /* LSIArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtist.m; sourceTree = "<group>"; };
+		E663B4B32482B9FD00EA9960 /* LSIArtistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtistController.h; sourceTree = "<group>"; };
+		E663B4B42482B9FD00EA9960 /* LSIArtistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtistController.m; sourceTree = "<group>"; };
+		E663B4B62482BA7E00EA9960 /* NSArtist+LSINSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArtist+LSINSJSONSerialization.h"; sourceTree = "<group>"; };
+		E663B4B72482BA7E00EA9960 /* NSArtist+LSINSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArtist+LSINSJSONSerialization.m"; sourceTree = "<group>"; };
+		E663B4B92482BBC700EA9960 /* LSIFavoriteArtistsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFavoriteArtistsTableViewController.h; sourceTree = "<group>"; };
+		E663B4BA2482BBC700EA9960 /* LSIFavoriteArtistsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFavoriteArtistsTableViewController.m; sourceTree = "<group>"; };
+		E663B4BC2482BC3B00EA9960 /* LSIAddArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIAddArtistViewController.h; sourceTree = "<group>"; };
+		E663B4BD2482BC3B00EA9960 /* LSIAddArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIAddArtistViewController.m; sourceTree = "<group>"; };
+		E663B4BF2482BD7300EA9960 /* LSIArtistDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtistDetailsViewController.h; sourceTree = "<group>"; };
+		E663B4C02482BD7300EA9960 /* LSIArtistDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtistDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +78,19 @@
 			children = (
 				E663B4AD2482B8FE00EA9960 /* LSIArtist.h */,
 				E663B4AE2482B8FE00EA9960 /* LSIArtist.m */,
+				E663B4B32482B9FD00EA9960 /* LSIArtistController.h */,
+				E663B4B42482B9FD00EA9960 /* LSIArtistController.m */,
 				E663B4A92482B85000EA9960 /* Storyboard */,
+				E663B4B92482BBC700EA9960 /* LSIFavoriteArtistsTableViewController.h */,
+				E663B4BA2482BBC700EA9960 /* LSIFavoriteArtistsTableViewController.m */,
+				E663B4BC2482BC3B00EA9960 /* LSIAddArtistViewController.h */,
+				E663B4BD2482BC3B00EA9960 /* LSIAddArtistViewController.m */,
+				E663B4BF2482BD7300EA9960 /* LSIArtistDetailsViewController.h */,
+				E663B4C02482BD7300EA9960 /* LSIArtistDetailsViewController.m */,
 				E663B4A72482B78D00EA9960 /* Resources */,
 				E663B4A02482B51E00EA9960 /* main.m */,
+				E663B4B62482BA7E00EA9960 /* NSArtist+LSINSJSONSerialization.h */,
+				E663B4B72482BA7E00EA9960 /* NSArtist+LSINSJSONSerialization.m */,
 			);
 			path = FavoriteArtists;
 			sourceTree = "<group>";
@@ -164,8 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E663B4902482B51D00EA9960 /* AppDelegate.m in Sources */,
+				E663B4BB2482BBC700EA9960 /* LSIFavoriteArtistsTableViewController.m in Sources */,
 				E663B4AF2482B8FE00EA9960 /* LSIArtist.m in Sources */,
 				E663B4A12482B51E00EA9960 /* main.m in Sources */,
+				E663B4B52482B9FD00EA9960 /* LSIArtistController.m in Sources */,
+				E663B4C12482BD7300EA9960 /* LSIArtistDetailsViewController.m in Sources */,
+				E663B4B82482BA7E00EA9960 /* NSArtist+LSINSJSONSerialization.m in Sources */,
+				E663B4BE2482BC3B00EA9960 /* LSIAddArtistViewController.m in Sources */,
 				E663B4932482B51D00EA9960 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ctg-ud-BLM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Favorite Artists Table View Controller-->
         <scene sceneID="ulz-YG-aWk">
             <objects>
-                <tableViewController id="hkK-rg-qvo" sceneMemberID="viewController">
+                <tableViewController id="hkK-rg-qvo" customClass="LSIFavoriteArtistsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MZl-fe-ywV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="1123.1884057971015" y="99.776785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--iAdd Artist View Controller-->
         <scene sceneID="pe1-NH-JSd">
             <objects>
-                <viewController id="tGI-uy-oMy" sceneMemberID="viewController">
+                <viewController id="tGI-uy-oMy" customClass="LSIAddArtistViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ajk-ak-QOT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,17 +117,27 @@
                         <viewLayoutGuide key="safeArea" id="rgM-SZ-Els"/>
                     </view>
                     <navigationItem key="navigationItem" id="w0m-39-VM5">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="Chf-rl-ffo"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="Chf-rl-ffo">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="tGI-uy-oMy" id="prM-23-5dI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="0Vf-6y-wik" id="Wa8-0p-4EU"/>
+                        <outlet property="biographyTextView" destination="jxg-b5-ggG" id="eSE-G3-Bfb"/>
+                        <outlet property="searchBar" destination="A3R-5c-b6R" id="zhk-r9-AbO"/>
+                        <outlet property="yearFormedLabel" destination="xQx-ba-dzF" id="LSV-ox-iR9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCc-Wg-d9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1821.7391304347827" y="-226.33928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Artist Details View Controller-->
         <scene sceneID="H8C-j5-tlM">
             <objects>
-                <viewController id="fPC-Uk-6RR" sceneMemberID="viewController">
+                <viewController id="fPC-Uk-6RR" customClass="LSIArtistDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yOf-Ep-6Sx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,6 +184,11 @@
                         <viewLayoutGuide key="safeArea" id="9Nk-Bl-Emc"/>
                     </view>
                     <navigationItem key="navigationItem" id="XyS-99-gO2"/>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="JuB-Yx-k9t" id="ydY-h5-upM"/>
+                        <outlet property="biographyTextView" destination="caI-Io-STv" id="qY8-ws-iNo"/>
+                        <outlet property="yearFormedLabel" destination="h35-v5-8el" id="jfG-f5-fId"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="er3-b5-Ag7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
